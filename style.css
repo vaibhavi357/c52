@@ -1,0 +1,61 @@
+h1{
+ 	color:#FF0000;
+ }
+ h2,p{
+ 	text-align: center;
+ }
+ p{
+ 	font-size: 30px;
+ 	font-family: sans-serif;
+ 	font-weight: 400;
+ 	color: rgb(100, 250, 40);
+ }
+ *{
+ 	border: 2px solid;
+ }
+ .header{
+ 	background-color:rgb(30, 50, 70);
+ 	display:flex;
+ 	justify-content: space-between;
+ }
+ .grid{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-evenly;
+ }
+ .footer{
+ 	display: flex;
+ 	justify-content: flex-end;
+ }
+ .menu{
+ 	margin-right: 30px;
+ }
+ body{
+ 	background-color: #808080; 
+ }
+ /*
+ margin is the space around the outer boundary of the element
+ padding is the space around the inner boundary of the element, that is the space between the text and the boundary
+ to put the text on the image we use the item position as relative and the paragraph's position as the absolute
+ and the give the spacing as 50% from top and left
+ to consider the width and height of the text and bring it to the exact center we use transfom and translate
+ opacity controls visibility which varies from 0 to 1*/
+ .menu a{
+ 	margin-left: 20px;
+ }
+ .item{
+ 	position: relative;
+ }
+ .item p{
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	opacity: 0;
+ }
+ .item:hover p{
+ 	opacity: 1;
+ }
+ .item:hover img{
+ 	opacity: 0.33;
+ }
